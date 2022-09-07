@@ -56,7 +56,8 @@ totalArabiaPrimeraFecha = resultadoequipo1PrimerPartido
 totalMexicoPrimeraFecha = resultadoequipo2PrimerPartido
 totalPoloniaPrimeraFecha = resultadoequipo3PrimerPartido
 
-alert((equiposGrupoC[0]+" "+ totalArgentinaPrimeraFecha)+" / "+
+alert("Puntos Primera Fecha:"+" "+
+    (equiposGrupoC[0]+" "+ totalArgentinaPrimeraFecha)+" / "+
     (equiposGrupoC[1]+" "+ totalArabiaPrimeraFecha)+" / "+
     (equiposGrupoC[2]+" "+ totalMexicoPrimeraFecha)+" / "+
     (equiposGrupoC[3]+" "+ totalPoloniaPrimeraFecha));
@@ -114,7 +115,8 @@ totalArabiaSegundaFecha = resultadoequipo1PrimerPartido + resultadoequipo1Segund
 totalMexicoSegundaFecha = resultadoequipo2PrimerPartido + resultadoequipo2SegundoPartido
 totalPoloniaSegundaFecha = resultadoequipo3PrimerPartido + resultadoequipo3SegundoPartido
 
-alert((equiposGrupoC[0]+" "+ totalArgentinaSegundaFecha)+" / "+
+alert("Puntos Segunda Fecha:"+" "+
+    (equiposGrupoC[0]+" "+ totalArgentinaSegundaFecha)+" / "+
     (equiposGrupoC[1]+" "+ totalArabiaSegundaFecha)+" / "+
     (equiposGrupoC[2]+" "+ totalMexicoSegundaFecha)+" / "+
     (equiposGrupoC[3]+" "+ totalPoloniaSegundaFecha));
@@ -172,13 +174,18 @@ totalArabiaTerceraFecha = resultadoequipo1PrimerPartido + resultadoequipo1Segund
 totalMexicoTerceraFecha = resultadoequipo2PrimerPartido + resultadoequipo2SegundoPartido + resultadoequipo2TercerPartido
 totalPoloniaTerceraFecha = resultadoequipo3PrimerPartido + resultadoequipo3SegundoPartido + resultadoequipo3TercerPartido
 
-alert((equiposGrupoC[0]+" "+ totalArgentinaTerceraFecha)+" / "+
+alert("Puntos Tercera Fecha:"+" "+
+    (equiposGrupoC[0]+" "+ totalArgentinaTerceraFecha)+" / "+
     (equiposGrupoC[1]+" "+ totalArabiaTerceraFecha)+" / "+
     (equiposGrupoC[2]+" "+ totalMexicoTerceraFecha)+" / "+
     (equiposGrupoC[3]+" "+ totalPoloniaTerceraFecha));
     
-/* 
 
+let posicionesFinales = [totalArgentinaTerceraFecha, totalArabiaTerceraFecha, totalArabiaTerceraFecha, totalPoloniaTerceraFecha];
+posicionesFinales.sort();
+alert(posicionesFinales)
+
+/* 
 alert(Math.max(55, 13, 0, -25, 93, 4))
 
 
