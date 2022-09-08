@@ -1,3 +1,4 @@
+
 const equiposGrupoC = ["Argentina", "Arabia Saudita", "Mexico", "Polonia"];
 
 const fixture =
@@ -20,7 +21,7 @@ else if (equipo0 < equipo1) {
     resultadoequipo1PrimerPartido = 3;
     alert("Ganó "+equiposGrupoC[1]);
 }
-else if (equipo0 === equipo1) {
+else {
     resultadoequipo0PrimerPartido = 1;
     resultadoequipo1PrimerPartido = 1;
     alert("Empate");
@@ -44,23 +45,18 @@ resultadoequipo2PrimerPartido = 0;
 resultadoequipo3PrimerPartido = 3;
 alert("Ganó "+equiposGrupoC[3]);
 }
-else if (equipo2 === equipo3) {
+else {
 resultadoequipo2PrimerPartido = 1;
 resultadoequipo3PrimerPartido = 1;
 alert("Empate");
 }
 
 //POSICIONES PRIMERA FECHA
-totalArgentinaPrimeraFecha = resultadoequipo0PrimerPartido
-totalArabiaPrimeraFecha = resultadoequipo1PrimerPartido
-totalMexicoPrimeraFecha = resultadoequipo2PrimerPartido
-totalPoloniaPrimeraFecha = resultadoequipo3PrimerPartido
-
 alert("Puntos Primera Fecha:"+" "+
-    (equiposGrupoC[0]+" "+ totalArgentinaPrimeraFecha)+" / "+
-    (equiposGrupoC[1]+" "+ totalArabiaPrimeraFecha)+" / "+
-    (equiposGrupoC[2]+" "+ totalMexicoPrimeraFecha)+" / "+
-    (equiposGrupoC[3]+" "+ totalPoloniaPrimeraFecha));
+    (equiposGrupoC[0]+" "+ resultadoequipo0PrimerPartido)+" / "+
+    (equiposGrupoC[1]+" "+ resultadoequipo1PrimerPartido)+" / "+
+    (equiposGrupoC[2]+" "+ resultadoequipo2PrimerPartido)+" / "+
+    (equiposGrupoC[3]+" "+ resultadoequipo3PrimerPartido));
 
 
 //Segunda fecha: Argentina - Mexico
@@ -80,7 +76,7 @@ resultadoequipo0PrimerPartido = 0;
 resultadoequipo2PrimerPartido = 3;
 alert("Ganó "+equiposGrupoC[2]);
 }
-else if (equipo00 === equipo22) {
+else {
 resultadoequipo0PrimerPartido = 1;
 resultadoequipo2PrimerPartido = 1;
 alert("Empate");
@@ -103,23 +99,18 @@ resultadoequipo1SegundoPartido = 0;
 resultadoequipo3SegundoPartido = 3;
 alert("Ganó "+equiposGrupoC[3]);
 }
-else if (equipo11 === equipo33) {
+else {
 resultadoequipo1SegundoPartido = 1;
 resultadoequipo3SegundoPartido = 1;
 alert("Empate");
 }
 
 //POSICIONES SEGUNDA FECHA
-totalArgentinaSegundaFecha = resultadoequipo0PrimerPartido + resultadoequipo0SegundoPartido
-totalArabiaSegundaFecha = resultadoequipo1PrimerPartido + resultadoequipo1SegundoPartido
-totalMexicoSegundaFecha = resultadoequipo2PrimerPartido + resultadoequipo2SegundoPartido
-totalPoloniaSegundaFecha = resultadoequipo3PrimerPartido + resultadoequipo3SegundoPartido
-
 alert("Puntos Segunda Fecha:"+" "+
-    (equiposGrupoC[0]+" "+ totalArgentinaSegundaFecha)+" / "+
-    (equiposGrupoC[1]+" "+ totalArabiaSegundaFecha)+" / "+
-    (equiposGrupoC[2]+" "+ totalMexicoSegundaFecha)+" / "+
-    (equiposGrupoC[3]+" "+ totalPoloniaSegundaFecha));
+    (equiposGrupoC[0]+" "+(resultadoequipo0PrimerPartido + resultadoequipo0SegundoPartido))+" / "+
+    (equiposGrupoC[1]+" "+(resultadoequipo1PrimerPartido + resultadoequipo1SegundoPartido))+" / "+
+    (equiposGrupoC[2]+" "+(resultadoequipo2PrimerPartido + resultadoequipo2SegundoPartido))+" / "+
+    (equiposGrupoC[3]+" "+(resultadoequipo3PrimerPartido + resultadoequipo3SegundoPartido)));
 
 
 //Tercera fecha: Argentina - Polonia
@@ -139,7 +130,7 @@ resultadoequipo0TercerPartido = 0;
 resultadoequipo3TercerPartido = 3;
 alert("Ganó "+equiposGrupoC[3]);
 }
-else if (equipo000 === equipo333) {
+else {
 resultadoequipo0TercerPartido = 1;
 resultadoequipo3TercerPartido = 1;
 alert("Empate");
@@ -162,7 +153,7 @@ resultadoequipo1TercerPartido = 0;
 resultadoequipo2TercerPartido = 3;
 alert("Ganó "+equiposGrupoC[2]);
 }
-else if (equipo111 === equipo222) {
+else {
 resultadoequipo1TercerPartido = 1;
 resultadoequipo2TercerPartido = 1;
 alert("Empate");
@@ -174,21 +165,16 @@ totalArabiaTerceraFecha = resultadoequipo1PrimerPartido + resultadoequipo1Segund
 totalMexicoTerceraFecha = resultadoequipo2PrimerPartido + resultadoequipo2SegundoPartido + resultadoequipo2TercerPartido
 totalPoloniaTerceraFecha = resultadoequipo3PrimerPartido + resultadoequipo3SegundoPartido + resultadoequipo3TercerPartido
 
-alert("Puntos Tercera Fecha:"+" "+
-    (equiposGrupoC[0]+" "+ totalArgentinaTerceraFecha)+" / "+
-    (equiposGrupoC[1]+" "+ totalArabiaTerceraFecha)+" / "+
-    (equiposGrupoC[2]+" "+ totalMexicoTerceraFecha)+" / "+
-    (equiposGrupoC[3]+" "+ totalPoloniaTerceraFecha));
+alert(("Puntos Tercera Fecha")+
+    (equiposGrupoC[0]+" "+(resultadoequipo0PrimerPartido + resultadoequipo0SegundoPartido + resultadoequipo0TercerPartido))+" / "+
+    (equiposGrupoC[1]+" "+(resultadoequipo1PrimerPartido + resultadoequipo1SegundoPartido + resultadoequipo1TercerPartido))+" / "+
+    (equiposGrupoC[2]+" "+(resultadoequipo2PrimerPartido + resultadoequipo2SegundoPartido + resultadoequipo2TercerPartido))+" / "+
+    (equiposGrupoC[3]+" "+(resultadoequipo3PrimerPartido + resultadoequipo3SegundoPartido + resultadoequipo3TercerPartido))) ;
     
 
-let posicionesFinales = [totalArgentinaTerceraFecha, totalArabiaTerceraFecha, totalArabiaTerceraFecha, totalPoloniaTerceraFecha];
+/* let posicionesFinales = [totalArgentinaTerceraFecha, totalArabiaTerceraFecha, totalArabiaTerceraFecha, totalPoloniaTerceraFecha];
 posicionesFinales.sort();
-alert(posicionesFinales)
+alert(posicionesFinales); */
 
-/* 
-alert(Math.max(55, 13, 0, -25, 93, 4))
-
-
- */
-  /*  &&
-    || */
+/* alert(Math.max())*/
+/*  && || */
